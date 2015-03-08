@@ -1,0 +1,85 @@
+﻿@{
+    ViewBag.Title = "School";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+  </head>
+ <body>   
+
+     <!-- Page Title -->
+        <div class="page-title-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 wow fadeIn">
+                        <i class="fa fa-envelope"></i>
+                       <h1>User Profile</h1>
+                         <img src="~/Content/Images/img/team/1.jpg"  style="width:15%; height:20%; resize:both; float:right  "/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+     <div style="height:100%; width:100%; background-color:blue; margin-top:2%" >
+            <div style="background-color:ActiveBorder;float:left; height:100%; width:20%; margin-left:5%">
+     <form class="form-horizontal">
+     <table class="table table-hover table-bordered ">
+  <thead>
+    <tr>
+        <th style="font-size:medium"><a  href="#" >General Account Setting</a></th>
+    </tr>
+       <tr>
+        <th style="font-size:medium">@Html.ActionLink("Add New Question", "AddQuestions", "STeacher")</th>
+    </tr>
+       <tr>
+        <th style="font-size:medium">@Html.ActionLink("Question Management", "PaperManagement", "STeacher")</th>
+    </tr>
+       <tr>
+        <th style="font-size:medium">@Html.ActionLink("Make Paper Randomly", "MakePaperRandomly", "STeacher")</th>
+    </tr>
+      <tr>
+        <th style="font-size:medium">@Html.ActionLink("Make Paper Manually", "MakePaper", "STeacher")</th>
+    </tr>
+     
+  </thead>  
+    </table>
+                </form>
+     </div>
+      <div style="background-color:ActiveBorder;float:left; height:100%; width:70%;margin-left:0%">
+            <table class="table table-hover table-bordered ">
+               
+            <tbody>
+                <tr>
+                    <td style="font-size:medium;text-align:left">Name:</td>
+                    <td style="font-size:medium;text-align:center"> Muhammad Ismail</td>
+                    <td style="font-size:medium;text-align:center">@Html.ActionLink("Edit", "AddQuestions", "STeacher")</td>
+                </tr>
+                 <tr>
+                    <td style="font-size:medium;text-align:left">User Name:</td>
+                    <td style="font-size:medium;text-align:center"> ismail309</td>
+                     <td style="font-size:medium;text-align:center">@Html.ActionLink("Edit", "AddQuestions", "STeacher")</td>
+                </tr>
+                 <tr>
+                    <td style="font-size:medium;text-align:left">Email:</td>
+                    <td style="font-size:medium;text-align:center"> ismail309</td>
+                     <td style="font-size:medium;text-align:center">@Html.ActionLink("Edit", "AddQuestions", "STeacher")</td>
+                </tr>
+                 <tr>
+                    <td style="font-size:medium;text-align:left">Mobile:</td>
+                    <td style="font-size:medium;text-align:center"> 03022586500</td>
+                     <td style="font-size:medium;text-align:center">@Html.ActionLink("Edit", "AddQuestions", "STeacher")</td>
+                </tr>
+            </tbody>   
+    </table>
+               
+            </div>   
+     </div> 
+     <div style="width:100%; height:1%; background-color:red; margin-top:100%">
+        
+     </div>
+    </body>
+</html>
+ 

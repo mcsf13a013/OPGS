@@ -1,0 +1,223 @@
+﻿@{
+    ViewBag.Title = "MakePaperRandomly";
+}
+
+@{
+    ViewBag.Title = "MakePaper";
+}
+<html>
+    <head>
+        <style>
+table {
+    width:100%;
+}
+table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size:medium;
+}
+th, td {
+    padding: 5px;
+    text-align:center;
+}
+
+table th	{
+    background-color: #959393;
+    color: white;
+    font-size:large;
+}
+            select {
+                font-size:medium;
+                font-family:Georgia;
+            }
+            label {
+                font-size:medium;
+                font-family:Georgia;
+                color:green;
+            }
+</style>
+    </head>
+
+    <body>
+       <form class="form-horizontal">     <!-- Page Title -->
+        <div class="page-title-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 wow fadeIn">
+                        <i class="fa fa-envelope"></i>
+                       <h1>Make Paper Randomly /</h1>
+                        <p>Here is how you can make your new paper ranomly</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+           <br />
+           <!-- Page Title -->
+        <div class="page-title-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 wow fadeIn">
+                        <i class="fa fa-envelope"></i>
+                        <p>Select Class </p>
+                        
+<select id="s1" name="classes" class="span2">
+<option value="volvo">8th</option>
+<option value="saab">9th</option>
+<option value="fiat">10th</option>
+<option value="audi">11th</option>
+<option value="audi">12th</option>
+</select>
+<select name="classes" class="span2">
+<option value="volvo">Science</option>
+<option value="saab">Arts</option>
+</select>
+<select name="classes" class="span2">
+<option value="volvo">English Medium</option>
+<option value="saab">Urdu Medium</option>
+</select>
+<p>Select Course</p>
+<select name="Course" class="span2">
+<option value="Cs">Computer Science</option>
+<option value="saab">Biology</option>
+<option value="fiat">Chemistry</option>
+<option value="audi">Physics</option>
+<option value="audi">English</option>
+</select>
+<p>Select Sylabus</p>
+<select name="Sylabus">
+<option value="volvo">Chapter</option>
+<option value="saab">FullBook</option>
+<option value="fiat">Half Book</option>
+<option value="audi">Ist Half</option>
+<option value="audi">Second Half</option>
+</select>
+<select  multiple="multiple"  style="width:4%">
+  <option value="volvo"> 1</option>
+  <option value="saab">2</option>
+  <option value="opel">3</option>
+  <option value="audi">4</option>
+     <option value="volvo"> 1</option>
+  <option value="saab">2</option>
+  <option value="opel">3</option>
+  <option value="audi">4</option>
+     <option value="volvo"> 5</option>
+  <option value="saab">6</option>
+  <option value="opel">6</option>
+  <option value="audi">8</option>
+</select><p>press Ctrl while multiple selection.</p><br />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<label id="l1" title="sylabus Information">
+    Sylabus Information: Selected chapter contains following number of question.</label>
+    <table class="table table-hover table-bordered " border="1" style="width:100%">
+         <thead>
+    <tr>
+       <th>Total MCQ's</th>
+        <th>Total SQ's</th>
+        <th>Total LQ's</th>
+        <th>Total T/F's</th>
+    </tr>
+  </thead>
+       <tbody>
+    <tr>
+            <td>55</td>
+            <td>33</td>
+            <td>15</td>
+            <td>10</td>
+      
+    </tr>
+  </tbody>  
+       
+    </table>
+
+<br />
+
+<h4>Select Paper Pattern</h4>
+<select name="pattern">
+<option value="volvo">Only MCQ's Based Paper</option>
+<option value="saab">Mix Questions Based Paper </option>
+</select>
+<br />
+           
+           <!-------for mix mode of questions----->
+
+           <h4>Select Number of MCQ's </h4>
+           <select  style="width:4%">
+  <option value="volvo"> 1</option>
+  <option value="saab">2</option>
+  <option value="opel">3</option>
+  <option value="audi">4</option>
+     <option value="volvo"> 1</option>
+  <option value="saab">2</option>
+  <option value="opel">3</option>
+  <option value="audi">4</option>
+     <option value="volvo"> 5</option>
+  <option value="saab">6</option>
+  <option value="opel">6</option>
+  <option value="audi">8</option>
+</select> 
+           <h4>Select Number of Short Question's </h4> 
+           <select  style="width:4%">
+  <option value="volvo"> 1</option>
+  <option value="saab">2</option>
+  <option value="opel">3</option>
+  <option value="audi">4</option>
+     <option value="volvo"> 1</option>
+  <option value="saab">2</option>
+  <option value="opel">3</option>
+  <option value="audi">4</option>
+     <option value="volvo"> 5</option>
+  <option value="saab">6</option>
+  <option value="opel">6</option>
+  <option value="audi">8</option>
+</select>
+           <h4>Select Number of Long Question's </h4> 
+           <select  style="width:4%">
+  <option value="volvo"> 1</option>
+  <option value="saab">2</option>
+  <option value="opel">3</option>
+  <option value="audi">4</option>
+     <option value="volvo"> 1</option>
+  <option value="saab">2</option>
+  <option value="opel">3</option>
+  <option value="audi">4</option>
+     <option value="volvo"> 5</option>
+  <option value="saab">6</option>
+  <option value="opel">6</option>
+  <option value="audi">8</option>
+</select>
+            <h4>Select Number of True/False Questions's </h4>
+           <select  style="width:4%">
+  <option value="volvo"> 1</option>
+  <option value="saab">2</option>
+  <option value="opel">3</option>
+  <option value="audi">4</option>
+     <option value="volvo"> 1</option>
+  <option value="saab">2</option>
+  <option value="opel">3</option>
+  <option value="audi">4</option>
+     <option value="volvo"> 5</option>
+  <option value="saab">6</option>
+  <option value="opel">6</option>
+  <option value="audi">8</option>
+</select><br /> 
+           <h4>Select Difficulty Level</h4>
+<select name="pattern">
+<option value="volvo">Easy Paper</option>
+<option value="saab">Normal Paper </option>
+<option value="saab">Tough Paper </option>
+</select>
+<br />
+           
+<input type="button" value="Generate Paper" class="btn btn-large btn-success "  style="float:right"/>&nbsp&nbsp
+<input type="button" value="View Paper" class="btn btn-large btn-info "  style="float:none" />&nbsp&nbsp
+<input title="reset" value="Reset Selection" class="btn btn-large btn-danger "  style="float:left" />
+   
+           </form> 
+        <br /><br /><br /><br />    
+    </body>
+    </html>

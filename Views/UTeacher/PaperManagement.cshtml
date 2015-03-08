@@ -1,0 +1,148 @@
+﻿@{
+    ViewBag.Title = "Paper Management";
+}
+
+
+<h2>Department Management</h2>
+<form>
+    <table border="1">
+        <th>Departments Name</th>
+         <th>Edit</th>
+         <th>Delete</th>
+        <tr>
+            <td>
+                <input type="text" size="50"/>
+            </td>
+             <td>
+                @Html.ActionLink("Edit this Class", "EditClass ", "STeacher")
+            </td>
+             <td>
+                @Html.ActionLink("Delete this Class", "DeleteClass ", "STeacher")
+            </td>
+           
+        </tr>
+
+    </table>
+         
+</form>
+<form>
+    <h5>Add New Department</h5>
+    <table border="1">
+        <tr>
+             <td><input type="text" required placeholder=" Write New Department Name here..." size="78" /></td>
+        </tr>    
+    </table>
+    
+  <input type="submit" value="Submit" />
+</form>
+
+
+
+<h2>Degree Management</h2>
+
+<form>
+    <table border="1">
+        <th>Degree Names</th>
+         <th>Edit</th>
+         <th>Delete</th>
+        <tr>
+            <td>
+                <input type="text" size="50"/>
+            </td>
+             <td>
+                @Html.ActionLink("Edit this Class", "EditClass ", "STeacher")
+            </td>
+             <td>
+                @Html.ActionLink("Delete this Class", "DeleteClass ", "STeacher")
+            </td>
+           
+        </tr>
+
+    </table>
+         
+</form>
+<form>
+    <h5>Add New Degree</h5>
+    <table border="1">
+        <tr>
+             <td><input type="text" required placeholder=" Write New Degree Name here..." size="78" /></td>
+        </tr>    
+    </table>
+    
+  <input type="submit" value="Submit" />
+</form>
+
+<h2>Course Management</h2>
+
+
+<form>
+    <table border="1">
+        <th>Courses Name</th>
+         <th>Edit</th>
+         <th>Delete</th>
+        <tr>
+            <td>
+                <input type="text"  size="47"/>
+            </td>
+             <td>
+                @Html.ActionLink("Edit this Subject", "EditSubject ", "STeacher")
+            </td>
+             <td>
+                @Html.ActionLink("Delete this Subject", "DeleteSubject ", "STeacher")
+            </td>
+           
+        </tr>
+
+    </table>          
+</form>
+
+<form>
+    <h5>Add New Course</h5>
+    <table border="1">
+        <tr>
+             <td><input type="text" required placeholder=" Write New Course Name here..." size="78" /></td>
+        </tr>    
+    </table>
+    
+  <input type="submit" value="Submit" />
+</form>
+
+
+<h2>Chapters Management</h2>
+<form>
+    <table border="1">
+        <th>Chapter Numbers</th>
+         <th>Edit</th>
+         <th>Delete</th>
+        <tr>
+            <td>
+                <input type="text"  size="47"/>
+            </td>
+             <td>
+                @Html.ActionLink("Edit this Subject", "EditSubject ", "STeacher")
+            </td>
+             <td>
+                @Html.ActionLink("Delete this Subject", "DeleteSubject ", "STeacher")
+            </td>
+           
+        </tr>
+
+    </table>          
+</form>
+
+
+
+<form>
+    <h5>Add New Chapter Number</h5>
+    <table border="1">
+        <tr>
+             <td><input type="number" required   min="1"  placeholder=" ch# here..."/></td>
+        </tr>    
+    </table>
+    
+  <input type="submit" value="Submit" />
+</form>
+
+
+                         
+                       

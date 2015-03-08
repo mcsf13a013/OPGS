@@ -1,0 +1,201 @@
+﻿@{
+    ViewBag.Title = "Paper Management";
+}
+<html>
+    <head>
+        <style>
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+    font-size:medium;
+}
+
+table th	{
+    background-color: #959393;
+    color: white;
+    font-size:large;
+}
+</style>
+    </head>
+
+    <body>
+ <!-- Page Title -->
+        <div class="page-title-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 wow fadeIn">
+                        <i class="fa fa-envelope"></i>
+                       <h1>Class Management</h1>
+                        <p>Here is how you can manage your new class</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+<form class="form-horizontal">
+        <table class="table table-hover table-bordered " border="1">
+  <thead>
+    <tr>
+        <th>Avaliable Classes</th>  
+         <th>Edit</th>
+         <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+               <input type="text"  size="80">
+            </td>
+             <td>
+                @Html.ActionLink("Edit this Class", "EditClass ", "STeacher")
+            </td>
+             <td>
+                @Html.ActionLink("Delete this Class", "DeleteClass ", "STeacher")
+            </td>
+    </tr>
+  </tbody>
+</table> 
+     
+</form>
+
+
+
+
+<form class="form-horizontal">
+        <table class="table table-hover table-bordered ">
+  <thead>
+    <tr>
+        <th>Add New Class</th>
+    </tr>
+  </thead>
+        <tr>
+             <td><input type="text" required placeholder=" Write New class Name here..." size="80" /></td>
+        </tr>    
+    </table>
+    
+  <input type="submit" value="Save" class="btn btn-large btn-success "  style="float:left" />
+</form>
+<br /><br /><br /><br />
+
+ <div class="page-title-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 wow fadeIn">
+                        <i class="fa fa-envelope"></i>
+                      <h1>Subject Management</h1>
+                        <p>Here is how you can manage your new class</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+<form class="form-horizontal">
+        <table class="table table-hover table-bordered ">
+  <thead>
+    <tr>
+         <th>Avaliable Subjects</th>
+         <th>Edit</th>
+         <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+               <input  type="text" " size="80">
+            </td>
+            <td>
+                @Html.ActionLink("Edit this Subject", "EditSubject ", "STeacher")
+            </td>
+             <td>
+                @Html.ActionLink("Delete this Subject", "DeleteSubject ", "STeacher")
+            </td>
+  </tbody>
+</table> 
+</form>
+
+<form class="form-horizontal">
+        <table class="table table-hover table-bordered ">
+  <thead>
+    <tr>
+        <th>Add New Subject</th>
+    </tr>
+  </thead>
+        <tr>
+             <td><input type="text" required placeholder="  Write New Subject Name here..." size="80" /></td>
+        </tr>    
+    </table>
+    
+  <input type="submit" value="Save" class="btn  btn-large btn-success"  style="float:left"/>
+</form>
+<br /><br /><br /><br />
+<div class="page-title-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 wow fadeIn">
+                        <i class="fa fa-envelope"></i>                      
+                        <h1>Chapters Management</h1>
+                        <p>Here is how you can manage your new Chapter</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form class="form-horizontal">
+        <table class="table table-hover table-bordered ">
+  <thead>
+    <tr>
+         <th>Avaliable Chapters</th>
+         <th>Edit</th>
+         <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+               <input  type="text" " size="80">
+            </td>
+            <td>
+                @Html.ActionLink("Edit this Chapter Id.", "EditSubject ", "STeacher")
+            </td>
+             <td>
+                @Html.ActionLink("Delete this Chapter Id", "DeleteSubject ", "STeacher")
+            </td>
+  </tbody>
+</table> 
+</form>
+
+
+<form class="form-horizontal">
+      <table class="table table-hover table-bordered ">
+           <thead>
+            <tr>
+                <th>Add New Chapter</th>
+             </tr>
+  </thead>
+        <tr>
+             <td><input type="number" class="input-large" required   min="1"  placeholder=" ch# here..."/></td>
+        </tr>    
+    </table>
+    
+        <input type="submit" value="Save" class="btn btn-success"  style="float:left"/>
+</form>
+<br /><br /><br /><br />
+ </body>
+
+</html>
+
+
+                         
+                       

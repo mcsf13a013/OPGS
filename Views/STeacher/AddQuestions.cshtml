@@ -1,0 +1,300 @@
+﻿@{
+    ViewBag.Title = "AddQuestions";
+}
+
+<html>
+    <head>
+        <style>
+table {
+    width:100%;
+}
+table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size:medium;
+}
+th, td {
+    padding: 5px;
+    text-align:center;
+}
+
+table th	{
+    background-color: #959393;
+    color: white;
+    font-size:large;
+}
+            select {
+                font-size:medium;
+                font-family:Georgia;
+            }
+            label {
+                font-size:medium;
+                font-family:Georgia;
+                color:green;
+            }
+</style>
+    </head>
+    <body>
+         <!-- Page Title -->
+        <div class="page-title-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 wow fadeIn">
+                        <i class="fa fa-envelope"></i>
+                       <h1>Question Management /</h1>
+                        <p>Here is how you can add your new question in database</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+<form>
+         <!-- Page Title -->
+        <div class="page-title-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 wow fadeIn">
+                        <i class="fa fa-envelope"></i>
+                       <h1>Multiple Choice Questions /</h1>
+                        <p>Select Class</p>
+<select name="classes">
+<option value="volvo">8th</option>
+<option value="saab">9th</option>
+<option value="fiat">10th</option>
+<option value="audi">11th</option>
+<option value="audi">12th</option>
+</select>
+<p>Select Course</p>
+<select name="Course">
+<option value="Cs">Computer Science</option>
+<option value="saab">Biology</option>
+<option value="fiat">Chemistry</option>
+<option value="audi">Physics</option>
+<option value="audi">English</option>
+</select>
+<p>Select Chapter</p>
+<select name="Sylabus">
+<option value="volvo">1</option>
+<option value="saab">2</option>
+<option value="fiat">3</option>
+<option value="audi">4</option>
+<option value="audi">5</option>
+</select>
+                    </div>
+                </div>
+            </div>
+        </div>   
+
+
+ <table class="table table-hover table-bordered " border="1">
+      <thead>
+    <tr>
+         <th>Description</th>
+    <th>A</th>
+    <th>B</th>
+    <th>C</th>
+    <th>D</th>
+    <th>Ans</th>
+    <th>Difficulty Level</th>
+    </tr>
+  </thead>
+    <tbody>
+    <tr>
+        <td><textarea rows="12" cols="85" required placeholder="Write MCQ's statement here..."></textarea></td>
+        <td><textarea rows="12" cols="13" required placeholder="option A"></textarea></td>
+        <td><textarea rows="12" cols="13" required placeholder="option B"></textarea></td>
+        <td><textarea rows="12" cols="13" required placeholder="option C"></textarea></td>
+        <td><textarea rows="12" cols="13" required placeholder="option D"></textarea></td>
+        <td><select name="Sylabus" required>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        </select></td>
+        <td><select name="pattern">
+        <option value="volvo">Easy</option>
+        <option value="saab">Tough</option>
+        </select></td>
+    </tr> 
+  </tbody>
+</table> 
+        <input type="submit" value="Save" class="btn btn-large btn-success "  style="float:left" />
+    </form>
+ <br /><br /><br /><br />
+
+ <form>
+      <div class="page-title-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 wow fadeIn">
+                        <i class="fa fa-envelope"></i>
+                       <h1>Short Questions /</h1>
+                         <p>Select Class</p>   <select name="classes">
+<option value="volvo">8th</option>
+<option value="saab">9th</option>
+<option value="fiat">10th</option>
+<option value="audi">11th</option>
+<option value="audi">12th</option>
+</select>
+<p>Select Course</p>
+<select name="Course">
+<option value="Cs">Computer Science</option>
+<option value="saab">Biology</option>
+<option value="fiat">Chemistry</option>
+<option value="audi">Physics</option>
+<option value="audi">English</option>
+</select>
+<p>Select Chapter</p>
+<select name="Sylabus">
+<option value="volvo">1</option>
+<option value="saab">2</option>
+<option value="fiat">3</option>
+<option value="audi">4</option>
+<option value="audi">5</option>
+</select>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+<table class="table table-hover table-bordered ">
+  <thead>
+    <tr>
+        <th>Description</th>
+        <th>Difficulty Level</th>
+    </tr>
+  </thead>
+    <tbody>
+         <tr>
+        <td><textarea rows="6" cols="150" placeholder="Write short question here..." required></textarea></td>
+              <td><select name="pattern">
+        <option value="volvo">Easy</option>
+        <option value="saab">Tough</option>
+        </select></td>
+    </tr> 
+    </tbody>
+   
+</table>
+      <input type="submit" value="Save" class="btn btn-large btn-success "  style="float:left" />
+</form>
+ <br /><br /><br /><br />
+<form>
+      <div class="page-title-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 wow fadeIn">
+                        <i class="fa fa-envelope"></i>
+                       <h1>Long Questions /</h1>
+                         <p>Select Class</p>   <select name="classes">
+<option value="volvo">8th</option>
+<option value="saab">9th</option>
+<option value="fiat">10th</option>
+<option value="audi">11th</option>
+<option value="audi">12th</option>
+</select>
+<p>Select Course</p>
+<select name="Course">
+<option value="Cs">Computer Science</option>
+<option value="saab">Biology</option>
+<option value="fiat">Chemistry</option>
+<option value="audi">Physics</option>
+<option value="audi">English</option>
+</select>
+<p>Select Chapter</p>
+<select name="Sylabus">
+<option value="volvo">1</option>
+<option value="saab">2</option>
+<option value="fiat">3</option>
+<option value="audi">4</option>
+<option value="audi">5</option>
+</select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+ <table class="table table-hover table-bordered ">
+  <thead>
+    <tr>
+        <th>Description</th>
+        <th>Difficulty Level</th>
+    </tr>
+  </thead>
+      <tr>
+        <td><textarea rows="6" cols="150" placeholder="Write Long question here..." required></textarea></td>
+           <td><select name="pattern">
+        <option value="volvo">Easy</option>
+        <option value="saab">Tough</option>
+        </select></td>
+    </tr>    
+    </table>
+    
+  <input type="submit" value="Save" class="btn btn-large btn-success "  style="float:left" />
+</form>
+  <br /><br /><br /><br />
+    
+
+<form>
+      <div class="page-title-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 wow fadeIn">
+                        <i class="fa fa-envelope"></i>
+                       <h1>True/False Questions /</h1>
+                         <p>Select Class</p>   <select name="classes">
+<option value="volvo">8th</option>
+<option value="saab">9th</option>
+<option value="fiat">10th</option>
+<option value="audi">11th</option>
+<option value="audi">12th</option>
+</select>
+<p>Select Course</p>
+<select name="Course">
+<option value="Cs">Computer Science</option>
+<option value="saab">Biology</option>
+<option value="fiat">Chemistry</option>
+<option value="audi">Physics</option>
+<option value="audi">English</option>
+</select>
+<p>Select Chapter</p>
+<select name="Sylabus">
+<option value="volvo">1</option>
+<option value="saab">2</option>
+<option value="fiat">3</option>
+<option value="audi">4</option>
+<option value="audi">5</option>
+</select>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+
+ <table class="table table-hover table-bordered ">
+  <thead>
+    <tr>
+         <th>Description</th>
+    <th>Right Answer</th>
+        <th>Difficulty Level</th>
+    </tr>
+  </thead>
+         <tr>
+        <td><textarea rows="6" cols="150" required placeholder="Write question statement here..."></textarea></td>
+        <td><select name="Sylabus" required>
+        <option value="A">True</option>
+        <option value="B">False</option>
+        </select></td>
+         <td><select name="pattern">
+        <option value="volvo">Easy</option>
+        <option value="saab">Tough</option>
+        </select></td>
+    </tr>   
+    </table>
+    
+  <input type="submit" value="Save" class="btn btn-large btn-success "  style="float:left" />
+</form>
+   <br /><br />
+   </body>> 
+</html>
+
+       

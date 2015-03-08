@@ -1,0 +1,315 @@
+﻿@{
+    ViewBag.Title = "MakePaper";
+}
+<html>
+    <head>
+        <style>
+table {
+    width:100%;
+}
+table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size:medium;
+}
+th, td {
+    padding: 5px;
+    text-align:center;
+}
+
+table th	{
+    background-color: #959393;
+    color: white;
+    font-size:large;
+}
+            select {
+                font-size:medium;
+                font-family:Georgia;
+            }
+            label {
+                font-size:medium;
+                font-family:Georgia;
+                color:green;
+            }
+</style>
+    </head>
+
+    <body>
+       <form class="form-horizontal">     <!-- Page Title -->
+        <div class="page-title-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 wow fadeIn">
+                        <i class="fa fa-envelope"></i>
+                       <h1>Ppaer Managemnet /</h1>
+                        <p>Here is how you can make your new paper</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+           <br />
+           <!-- Page Title -->
+        <div class="page-title-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 wow fadeIn">
+                        <i class="fa fa-envelope"></i>
+                        <p>Select Class </p>
+                        
+<select id="s1" name="classes" class="span2">
+<option value="volvo">8th</option>
+<option value="saab">9th</option>
+<option value="fiat">10th</option>
+<option value="audi">11th</option>
+<option value="audi">12th</option>
+</select>
+<select name="classes" class="span2">
+<option value="volvo">Science</option>
+<option value="saab">Arts</option>
+</select>
+<select name="classes" class="span2">
+<option value="volvo">English Medium</option>
+<option value="saab">Urdu Medium</option>
+</select>
+<p>Select Course</p>
+<select name="Course" class="span2">
+<option value="Cs">Computer Science</option>
+<option value="saab">Biology</option>
+<option value="fiat">Chemistry</option>
+<option value="audi">Physics</option>
+<option value="audi">English</option>
+</select>
+<p>Select Sylabus</p>
+<select name="Sylabus">
+<option value="volvo">Chapter</option>
+<option value="saab">FullBook</option>
+<option value="fiat">Half Book</option>
+<option value="audi">Ist Half</option>
+<option value="audi">Second Half</option>
+</select>
+<select  multiple="multiple"  style="width:4%">
+  <option value="volvo"> 1</option>
+  <option value="saab">2</option>
+  <option value="opel">3</option>
+  <option value="audi">4</option>
+     <option value="volvo"> 1</option>
+  <option value="saab">2</option>
+  <option value="opel">3</option>
+  <option value="audi">4</option>
+     <option value="volvo"> 5</option>
+  <option value="saab">6</option>
+  <option value="opel">6</option>
+  <option value="audi">8</option>
+</select><p>press Ctrl while multiple selection.</p><br />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<label id="l1" title="sylabus Information">
+    Sylabus Information: Selected chapter contains following number of question.</label>
+    <table class="table table-hover table-bordered " border="1" style="width:100%">
+         <thead>
+    <tr>
+       <th>Total MCQ's</th>
+        <th>Total SQ's</th>
+        <th>Total LQ's</th>
+        <th>Total T/F's</th>
+    </tr>
+  </thead>
+       <tbody>
+    <tr>
+            <td>55</td>
+            <td>33</td>
+            <td>15</td>
+            <td>10</td>
+      
+    </tr>
+  </tbody>  
+       
+    </table>
+
+<br />
+
+<h4>Select Paper Pattern</h4>
+<select name="pattern">
+<option value="volvo">Only MCQ's Based Paper</option>
+<option value="saab">Mix Questions Based Paper </option>
+</select>
+<!-- Page Title -->
+        <div class="page-title-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 wow fadeIn">
+                        <i class="fa fa-envelope"></i>
+                       <h1>Multiple Choice Questions</h1>
+                        <p>Here is how you can select multiple questions </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ <table class="table table-hover table-bordered " border="1" style="width:100%">
+     <thead>
+    <tr>
+            <th>Select</th>
+             <th>Q.No#</th>
+             <th>Description</th>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+             <th>D</th>
+             <th>Ans</th>
+    </tr>
+  </thead>
+    <tbody>
+    <tr>
+        <td><input type="checkbox" /> </td>
+        <td>1</td>
+        <td>CS stands for dfsfh kjsdhfh jkdhsfkjh fajkhkjsdhf hsdjfhkjhadsf hjsdfh dsjfhjkhsd hdsfjhsdf kjhsdfkjhsdfh kjhdfkjhjsdh kjhsdfjkhjksd kjhsdfjkhkjsdhf sdfjkhsakjdhf shdfkjhasdkjhf ksdhfkjhsdkjfh ksdfhjkhsdjkhf kjsdfkjhsdkjfh kdsfhkjhdsjkfh kjdsfhjksdhfkjh kjdshfkjhsdkjfh sdkfhjksdhjkfhkj sdkfhkjsdhfkjhksdf jkhsdf skjdfhkjsdhfh kjdsfkjsdhfjhkjsdhfkjsdjf kjsdhfkjsdkjfh sdkjfhjksdh fjkhsjlkdfhjk sdhflk kjsdfkjhsdkjhf skjdfh ksdhfkjhsdkjf ksjdfhjk fsdkjhsdkjfhjhsdf dsfkjhksdjfhjk fkjjh?</td>
+        <td>Computer Science</td>
+        <td>Cpter Science</td>
+        <td>Cement Science</td>
+        <td>Cinene Science</td>
+        <td>A</td>
+
+    </tr>
+     <tr>
+        <td><input type="checkbox" /> </td>
+        <td>1</td>
+        <td>CS stands for?</td>
+        <td>Computer Science</td>
+        <td>Cpter Science</td>
+        <td>Cement Science</td>
+        <td>Cinene Science</td>
+        <td>A</td>
+
+    </tr>
+     
+  </tbody>
+   
+    
+</table>
+<!-- Page Title -->
+        <div class="page-title-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 wow fadeIn">
+                        <i class="fa fa-envelope"></i>
+                       <h1>Short Questions</h1>
+                        <p>Here is how you can select short questions </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+ <table class="table table-hover table-bordered " border="1" style="width:100%">
+  <thead>
+    <tr>
+       <th>Select</th>
+        <th>Q.No#</th>
+         <th>Description</th>
+    </tr>
+  </thead>
+    <tbody>
+    <tr>
+      <tr>
+        <td><input type="checkbox" /> </td>
+        <td>1</td>
+        <td>What is Input devices?</td>
+     </tr>
+     <tr>
+        <td><input type="checkbox" /> </td>
+        <td>1</td>
+        <td>Write a short note on printer/</td>
+    </tr>
+  </tbody>
+   
+     
+    
+</table>
+
+<!-- Page Title -->
+        <div class="page-title-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 wow fadeIn">
+                        <i class="fa fa-envelope"></i>
+                       <h1>Long Questions</h1>
+                        <p>Here is how you can select long questions </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+<table class="table table-hover table-bordered " border="1" style="width:100%">
+  <thead>
+    <tr>
+         <th>Select</th>
+         <th>Q.No#</th>
+            <th>Description</th>
+    </tr>
+  </thead>
+   <tbody>
+    <tr>
+        <td><input type="checkbox" /> </td>
+        <td>1</td>
+        <td>What is Input devices? Describe in detail.</td>
+    </tr>
+     <tr>
+        <td><input type="checkbox" /> </td>
+        <td>1</td>
+        <td>Write a short note on printer. Also discuss its types</td>
+    </tr>
+  </tbody>
+   
+    </table>
+<!-- Page Title -->
+        <div class="page-title-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 wow fadeIn">
+                        <i class="fa fa-envelope"></i>
+                       <h1>True/False Questions</h1>
+                        <p>Here is how you can select True/False Questions </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+ <table class="table table-hover table-bordered " border="1" style="width:100%">
+  <thead>
+    <tr>
+        <th>Select</th>
+    <th>Q.No#</th>
+    <th>Description</th>
+     <th>True/False</th>
+     <th>Ans</th>
+    </tr>
+  </thead>
+   <tbody>
+    <tr>
+        <td><input type="checkbox" /> </td>
+        <td>1</td>
+        <td>Computer is electronic machine?</td>
+        <td>True/False</td>
+        <td>True</td>
+    </tr>
+     <tr>
+       <td><input type="checkbox" /> </td>
+        <td>2</td>
+        <td>Printer is an input device?</td>
+        <td>True/False</td>
+        <td>False</td>
+    </tr>  
+  </tbody>
+   
+</table>
+<br />
+<input type="button" value="Generate Paper" class="btn btn-large btn-success "  style="float:right"/>&nbsp&nbsp
+<input type="button" value="View Paper" class="btn btn-large btn-info "  style="float:none" />&nbsp&nbsp
+<input title="reset" value="Reset Selection" class="btn btn-large btn-danger "  style="float:left" />
+   
+           </form> 
+        <br /><br /><br /><br />    
+    </body>
+    </html>

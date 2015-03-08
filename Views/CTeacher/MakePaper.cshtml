@@ -1,0 +1,147 @@
+﻿@{
+    ViewBag.Title = "MakePaper";
+}
+
+<h2>MakePaper</h2>
+Select Class
+<select name="classes">
+<option value="volvo">8th</option>
+<option value="saab">9th</option>
+<option value="fiat">10th</option>
+<option value="audi">11th</option>
+<option value="audi">12th</option>
+</select><br />
+Select Course
+<select name="Course">
+<option value="Cs">Computer Science</option>
+<option value="saab">Biology</option>
+<option value="fiat">Chemistry</option>
+<option value="audi">Physics</option>
+<option value="audi">English</option>
+</select><br />
+Select Sylabus
+<select name="Sylabus">
+<option value="volvo">Chapers</option>
+<option value="saab">FullBook</option>
+<option value="fiat">Half Book</option>
+<option value="audi">Ist Half</option>
+<option value="audi">Second Half</option>
+</select>
+<label title="sylabus Information">
+    Sylabus Information: This section contains following number of question.
+    <table border="1" style="margin-right:10px">
+        <th>Total MCQ's</th>
+        <th>Total SQ's</th>
+        <th>Total LQ's</th>
+        <th>Total T/F's</th>
+        <tr>
+            <td>55</td>
+            <td>33</td>
+            <td>15</td>
+            <td>10</td>
+        </tr>
+    </table>
+</label>
+<br />
+
+Select Pattern
+<select name="pattern">
+<option value="volvo">Only MCQ's</option>
+<option value="saab">Mix Questions </option>
+</select>
+<h5>Multiple Choice Questions</h5>
+<table border="1">
+    <th>Select</th>
+    <th>Q.No#</th>
+    <th>Description</th>
+    <th>A</th>
+    <th>B</th>
+    <th>C</th>
+    <th>D</th>
+    <th>Ans</th>
+    <tr>
+        <td><input type="checkbox" /> </td>
+        <td>1</td>
+        <td>CS stands for dfsfh kjsdhfh jkdhsfkjh fajkhkjsdhf hsdjfhkjhadsf hjsdfh dsjfhjkhsd hdsfjhsdf kjhsdfkjhsdfh kjhdfkjhjsdh kjhsdfjkhjksd kjhsdfjkhkjsdhf sdfjkhsakjdhf shdfkjhasdkjhf ksdhfkjhsdkjfh ksdfhjkhsdjkhf kjsdfkjhsdkjfh kdsfhkjhdsjkfh kjdsfhjksdhfkjh kjdshfkjhsdkjfh sdkfhjksdhjkfhkj sdkfhkjsdhfkjhksdf jkhsdf skjdfhkjsdhfh kjdsfkjsdhfjhkjsdhfkjsdjf kjsdhfkjsdkjfh sdkjfhjksdh fjkhsjlkdfhjk sdhflk kjsdfkjhsdkjhf skjdfh ksdhfkjhsdkjf ksjdfhjk fsdkjhsdkjfhjhsdf dsfkjhksdjfhjk fkjjh?</td>
+        <td>Computer Science</td>
+        <td>Cpter Science</td>
+        <td>Cement Science</td>
+        <td>Cinene Science</td>
+        <td>A</td>
+
+    </tr>
+     <tr>
+        <td><input type="checkbox" /> </td>
+        <td>1</td>
+        <td>CS stands for?</td>
+        <td>Computer Science</td>
+        <td>Cpter Science</td>
+        <td>Cement Science</td>
+        <td>Cinene Science</td>
+        <td>A</td>
+
+    </tr>
+     
+    
+</table>
+<h5>Short Questions</h5>
+<table border="1">
+    <th>Select</th>
+    <th>Q.No#</th>
+    <th>Description</th>
+    <tr>
+        <td><input type="checkbox" /> </td>
+        <td>1</td>
+        <td>What is Input devices?</td>
+    </tr>
+     <tr>
+        <td><input type="checkbox" /> </td>
+        <td>1</td>
+        <td>Write a short note on printer/</td>
+    </tr>
+     
+    
+</table>
+
+<h5>Long Questions</h5>
+<table border="1">
+    <th>Select</th>
+    <th>Q.No#</th>
+    <th>Description</th>
+    <tr>
+        <td><input type="checkbox" /> </td>
+        <td>1</td>
+        <td>What is Input devices? Describe in detail.</td>
+    </tr>
+     <tr>
+        <td><input type="checkbox" /> </td>
+        <td>1</td>
+        <td>Write a short note on printer. Also discuss its types</td>
+    </tr>
+    </table>
+    <h5>True/False Questions</h5>
+<table border="1">
+    <th>Select</th>
+    <th>Q.No#</th>
+    <th>Description</th>
+     <th>True/False</th>
+     <th>Ans</th>
+    <tr>
+        <td><input type="checkbox" /> </td>
+        <td>1</td>
+        <td>Computer is electronic machine?</td>
+        <td>True/False</td>
+        <td>True</td>
+    </tr>
+     <tr>
+       <td><input type="checkbox" /> </td>
+        <td>2</td>
+        <td>Printer is an input device?</td>
+        <td>True/False</td>
+        <td>False</td>
+    </tr>  
+</table>
+
+<input type="button" value="Generate Paper" />
+<input type="button" value="View Paper" />
+<input type="button" value="Reset Selection" />

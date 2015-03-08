@@ -1,0 +1,124 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap 3 with Google Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap core CSS -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.css" rel="stylesheet" media="screen">
+ 
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
+    <![endif]-->
+ 
+         <style>
+            html { height: 100% }
+            body { height: 100% }
+            #map-container { height: 300px }
+       </style>
+    </head>
+<body>
+      <!-- Page Title -->
+        <div class="page-title-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 wow fadeIn">
+                        <i class="fa fa-envelope"></i>
+                        <h1>Contact Us /</h1>
+                        <p>Here is how you can contact us</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="contact-us-container">
+        	<div class="container">
+	            <div class="row">
+	                <div class="col-sm-7 contact-form wow fadeInLeft">
+	                    <p>
+	                    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
+	                    	Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper <a href="">suscipit lobortis</a> 
+	                    	nisl ut aliquip ex ea commodo consequat.
+	                    </p>
+	                    <form role="form" action="~/contact.php" method="post">
+	                    	<div class="form-group">
+	                    		<label for="contact-name">Name</label>
+	                        	<input type="text" name="name" placeholder="Enter your name..." class="contact-name" id="contact-name">
+	                        </div>
+	                    	<div class="form-group">
+	                    		<label for="contact-email">Email</label>
+	                        	<input type="text" name="email" placeholder="Enter your email..." class="contact-email" id="contact-email">
+	                        </div>
+	                        <div class="form-group">
+	                        	<label for="contact-subject">Subject</label>
+	                        	<input type="text" name="subject" placeholder="Your subject..." class="contact-subject" id="contact-subject">
+	                        </div>
+	                        <div class="form-group">
+	                        	<label for="contact-message">Message</label>
+	                        	<textarea name="message" placeholder="Your message..." class="contact-message" id="contact-message"></textarea>
+	                        </div>
+	                        <button type="submit" class="btn">Send</button>
+	                    </form>
+	                </div>
+	                <div class="col-sm-5 contact-address wow fadeInUp">
+	                    <h3>We Are Here</h3>
+	                     <div id="map-container" class="col-md-12" ></div>
+ 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+   <script>
+
+       function init_map() {
+           var var_location = new google.maps.LatLng(45.430817, 12.331516);
+
+           var var_mapoptions = {
+               center: var_location,
+               zoom: 14
+           };
+
+           var var_marker = new google.maps.Marker({
+               position: var_location,
+               map: var_map,
+               title: "PUCIT, Lahore"
+           });
+
+           var var_map = new google.maps.Map(document.getElementById("map-container"),
+               var_mapoptions);
+
+           var_marker.setMap(var_map);
+
+       }
+
+       google.maps.event.addDomListener(window, 'load', init_map);
+
+    </script>
+                        <br />
+                        <br />
+	                    <h3>Address</h3>
+	                    <p>Rana Muhammad Ismail <br> PUCIT, Lahore, Pakistan</p>
+	                    <p>Phone: +92 302 2586500</p>
+	                </div>
+	            </div>
+	        </div>
+        </div>
+
+   
+</body>
+</html>
+
+
+
+
+
